@@ -1,0 +1,39 @@
+ID
+Name
+Xpath
+CSS
+className
+linkText , if <a
+partialLinkText
+
+tagName
+attribute
+value
+
+console
+$(input[name = 'name'])
+$x(//input[@type = 'submit'])
+length: 1
+
+CSS tagname[attribute = 'value']
+Xpath //tagname[@attribute = 'value']   //*[contains(@attribute,'value')]
+input#username
+$('#username')
+.password
+
+Generating CSS from ID
+tagname#ID(tagname is optional)
+
+Generating CSS from Classname
+tagname.classname (make sure there are no spaces in class names.Replace with.)
+
+Select Parent Locator from Child using Xpath
+Xpath/parent :: tagname
+
+Generating Xpath based on text
+//tagname[text() = 'xxx']
+
+Creating Xpath and CSS by Traversing Tags
+Xpath: ParentTag/ChildTag
+CSS: ParentTag childTag
+
