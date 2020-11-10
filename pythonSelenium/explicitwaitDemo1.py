@@ -29,7 +29,7 @@ driver.find_element_by_xpath("//button[text()='PROCEED TO CHECKOUT']").click()
 wait = WebDriverWait(driver, 8)
 wait.until(expected_conditions.presence_of_element_located((By.CLASS_NAME, "promoCode")))
 
-veggies =driver.find_elements_by_css_selector("p.product-name")
+veggies = driver.find_elements_by_css_selector("p.product-name")
 for veg in veggies:
     list2.append(veg.text)
 

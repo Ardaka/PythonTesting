@@ -30,8 +30,4 @@ driver.find_element_by_css_selector(".promoBtn").click()
 
 wait.until(expected_conditions.presence_of_element_located(By.CSS_SELECTOR, "span.promoInfo"))
 print(driver.find_element_by_css_selector("span.promoInfo").text)
-
-
-
-wait.until(expected_conditions.presence_of_element_located(By.CSS_SELECTOR, "span.promoInfo"))
-print(driver.find_element_by_css_selector("span.promoInfo").text)
+driver.close()
